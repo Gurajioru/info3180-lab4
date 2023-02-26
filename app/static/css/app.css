@@ -18,3 +18,17 @@ body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+#pic_info {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    
+    grid-gap:15px;
+}
+
+img {
+    float: left;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+}
