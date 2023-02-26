@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div id = "pic_info">
+    {%for pic in list %}
+        
+    <img src="{{ url_for('get_image', filename= pic) }}" />
+
+    {%endfor%}
+
+</div>
+{% endblock %}
+
+
+
+
+{#<img src="{{url_for('files')}}" />#}
