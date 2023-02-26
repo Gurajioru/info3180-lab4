@@ -139,4 +139,11 @@ def files():
     list=get_uploaded_images()
     return render_template('files.html',list=list)
 
+@app.route('/logout')
+def logout():
+    logout_user()
+    flash('Logout successful', 'success')
+    return redirect(url_for('home'))
+
+
 
